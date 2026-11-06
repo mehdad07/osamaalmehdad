@@ -217,10 +217,13 @@ code { padding: 2px 6px; border-radius: 4px; background: var(--surface-alt); col
   .site-footer { align-items: flex-start; flex-direction: column; gap: 5px; }
 }
 
+/* روابط التواصل: الأيقونة أولاً ثم النص، بدون إطار حول الأيقونة */
+
 .social-links {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 15px;
+  direction: ltr;
   flex-wrap: wrap;
 }
 
@@ -229,8 +232,13 @@ code { padding: 2px 6px; border-radius: 4px; background: var(--surface-alt); col
   align-items: center;
   gap: 6px;
   color: var(--muted);
+  font-family: ui-monospace, monospace;
   font-size: 11px;
-  transition: color .2s ease, transform .2s ease;
+  direction: ltr;
+  text-decoration: none;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .social-links a:hover {
@@ -239,22 +247,35 @@ code { padding: 2px 6px; border-radius: 4px; background: var(--surface-alt); col
 }
 
 .social-icon {
-  display: inline-grid;
-  place-items: center;
-  width: 21px;
-  height: 21px;
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  background: var(--surface);
-  color: var(--accent);
-  font-family: Arial, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 1;
+  display: block;
+  width: 17px;
+  height: 17px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
-.social-icon-text {
-  font-size: 10px;
-  direction: ltr;
+/* أيقونة LinkedIn تحتاج تعبئة داخلية */
+.social-icon-linkedin {
+  fill: currentColor;
+  stroke: none;
+}
+
+/* في الشاشات الصغيرة نخفي بعض الروابط إذا لم تتسع المساحة */
+@media (max-width: 500px) {
+  .social-links {
+    gap: 10px;
+  }
+
+  .social-links a {
+    font-size: 10px;
+  }
+
+  .social-icon {
+    width: 16px;
+    height: 16px;
+  }
 }
 
