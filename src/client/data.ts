@@ -56,7 +56,7 @@ export const portfolioData = {
     phone: '+966539235218',
     socialLinks: [
       { label: 'البريد الإلكتروني', shortLabel: 'Email', href: 'mailto:osamaalmehdad@gmail.com' },
-      { label: 'LinkedIn', shortLabel: 'LinkedIn', href: 'https://www.linkedin.com/' },
+      { label: 'LinkedIn', shortLabel: 'LinkedIn', href: 'https://www.linkedin.com/in/اسامه-المحداد-43180b291' },
       { label: 'GitHub', shortLabel: 'GitHub', href: 'https://github.com/mehdad07' },
     ] satisfies SocialLink[],
   },
@@ -188,8 +188,8 @@ export const portfolioData = {
   contacts: [
     { label: 'البريد الإلكتروني', value: 'osamaalmehdad@gmail.com', href: 'mailto:osamaalmehdad@gmail.com', description: 'للتواصل المهني وطلبات العمل والتعاون.' },
     { label: 'الهاتف', value: '+966539235218', href: 'tel:+967772123962', description: 'للتواصل  .' },
-    { label: 'LinkedIn', value: 'أضف رابط حسابك هنا', href: 'https://www.linkedin.com/', description: 'استبدل الرابط بحسابك المهني على LinkedIn.' },
-    { label: 'GitHub', value: 'أضف رابط حسابك هنا', href: 'https://github.com/', description: 'استبدل الرابط بحسابك البرمجي على GitHub.' },
+    { label: 'LinkedIn', value: 'https://www.linkedin.com/in/اسامه-المحداد-43180b291', href: 'https://www.linkedin.com/in/اسامه-المحداد-43180b291', description: ' ملفي الشخصي على LinkedIn.' },
+    { label: 'GitHub', value: 'https://github.com/mehdad07', href: 'https://github.com/mehdad07', description: 'حسابي على GitHub' },
   ] satisfies ContactMethod[],
 } as const;
 
