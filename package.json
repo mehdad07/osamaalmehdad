@@ -1,0 +1,24 @@
+{
+  "name": "personalhub",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "موقع شخصي عربي من صفحة واحدة باستخدام Vanilla TypeScript وExpress",
+  "packageManager": "npm@10.9.2",
+  "scripts": {
+    "clean": "node scripts/clean.mjs",
+    "build": "npm run clean && tsc && node scripts/copy-public.mjs",
+    "start": "node dist/server.js",
+    "dev": "npm run build && tsx watch src/server.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.10.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}

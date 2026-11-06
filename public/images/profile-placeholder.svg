@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-labelledby="title desc">
+  <title id="title">صورة شخصية افتراضية</title>
+  <desc id="desc">رسم تجريدي مؤقت يمكن استبداله بصورة شخصية حقيقية</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0e7490"/><stop offset="1" stop-color="#163038"/></linearGradient>
+    <linearGradient id="shirt" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f7a878"/><stop offset="1" stop-color="#d96d64"/></linearGradient>
+  </defs>
+  <rect width="800" height="800" rx="80" fill="url(#bg)"/>
+  <circle cx="635" cy="125" r="130" fill="#55c6cf" opacity=".25"/><circle cx="120" cy="690" r="190" fill="#f7a878" opacity=".2"/>
+  <circle cx="400" cy="300" r="138" fill="#f3c7a7"/>
+  <path d="M260 300c12-138 72-190 157-190 102 0 159 75 142 190-40-53-84-82-144-82-65 0-113 29-155 82Z" fill="#172e33"/>
+  <circle cx="350" cy="310" r="12" fill="#163038"/><circle cx="450" cy="310" r="12" fill="#163038"/>
+  <path d="M355 377c30 25 60 25 90 0" fill="none" stroke="#b66d61" stroke-width="10" stroke-linecap="round"/>
+  <path d="M158 800c22-171 110-250 242-250s220 79 242 250" fill="url(#shirt)"/>
+  <text x="400" y="735" text-anchor="middle" fill="#fff" opacity=".84" font-family="Arial, sans-serif" font-size="34" letter-spacing="5">YOUR PHOTO</text>
+</svg>
