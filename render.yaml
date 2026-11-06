@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: osama-personalhub
+    name: osamaalmehdad
     runtime: node
     plan: free
     buildCommand: npm ci && npm run build
