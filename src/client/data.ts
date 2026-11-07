@@ -188,7 +188,7 @@ export const portfolioData = {
   contacts: [
     { label: 'Whatsapp', value: 'https://wa.me/+966539235218', href: 'https://wa.me/+966539235218', description: 'تواصل معي على واتساب' },
     { label: 'البريد الإلكتروني', value: 'osamaalmehdad@gmail.com', href: 'mailto:osamaalmehdad@gmail.com', description: 'للتواصل المهني وطلبات العمل والتعاون.' },
-    { label: 'الهاتف', value: '+966539235218', href: 'tel:+967772123962', description: 'للتواصل  .' },
+    { label: 'الهاتف', value: '+966539235218', href: 'tel:+966539235218', description: 'للتواصل  .' },
     { label: 'LinkedIn', value: 'https://www.linkedin.com/in/اسامه-المحداد-43180b291', href: 'https://www.linkedin.com/in/اسامه-المحداد-43180b291', description: ' ملفي الشخصي على LinkedIn.' },
     { label: 'GitHub', value: 'https://github.com/mehdad07', href: 'https://github.com/mehdad07', description: 'حسابي على GitHub' },
   ] satisfies ContactMethod[],
